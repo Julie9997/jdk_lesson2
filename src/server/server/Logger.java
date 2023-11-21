@@ -4,7 +4,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 
 public class Logger implements Repository<String> {
-    private static final String LOG_PATH = "src/server/server/repository/history.txt";
+    private static final String LOG_PATH = "src/server/server/log.txt";
 
     public void save(String text){
         try (FileWriter writer = new FileWriter(LOG_PATH, true)){
